@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors Game</h1>
+      <h2>The winner is first to get 5 points</h2>
+    </header>
+    <div class="human-container">
+      <p class="human-title">Human</p>
+      <img class="human-avatar" src="./img/human.png" alt="human avatar" />
+      <div class="human-score">
+        <h2>Score</h2>
+        <h3 id="human-score">0</h3>
+      </div>
+
+      <div class="human-rock-button" id="hrb">
+        <img src="./img/rock.png" alt="hand imitating rock" />
+        <h3>Rock</h3>
+      </div>
+      <div class="human-paper-button" id="hpb">
+        <img src="./img/paper.png" alt="hand imitating paper" />
+        <h3>Paper</h3>
+      </div>
+      <div class="human-scissors-button" id="hsb">
+        <img src="./img/scissors.png" alt="hand imitating scissors" />
+        <h3>Scissors</h3>
+      </div>
+    </div>
+
+    <div class="computer-container">
+      <p class="computer-title">Computer</p>
+      <img
+        class="computer-avatar"
+        src="./img/computer.png"
+        alt="computer avatar"
+      />
+      <div class="computer-score">
+        <h2>Score</h2>
+        <h3 id="computer-score">0</h3>
+      </div>
+
+      <div class="computer-rock-button" id="crb">
+        <img src="./img/rock.png" alt="hand imitating rock" />
+        <h3>Rock</h3>
+      </div>
+      <div class="computer-paper-button" id="cpb">
+        <img src="./img/paper.png" alt="hand imitating paper" />
+        <h3>Paper</h3>
+      </div>
+      <div class="computer-scissors-button" id="csb">
+        <img src="./img/scissors.png" alt="hand imitating scissors" />
+        <h3>Scissors</h3>
+      </div>
+    </div>
+    <p id="result"></p>
+    <button id="winner" class="refresh" onclick="window.location.reload()
+    ">Refresh</button>
+    <script src="./script.js"></script>
+  </body>
+</html>

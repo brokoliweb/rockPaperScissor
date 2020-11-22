@@ -1,0 +1,136 @@
+
+body {
+    background-color:#B5E2E6;
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+img {
+    width: 40%;
+}
+
+.human-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: 
+        "header1 header1 header1"
+        "main1 . main2"
+        "footer1 footer2 footer3";
+    width: 610px;
+    margin: 20px auto;
+    border: solid black;
+    
+}
+
+.computer-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: 
+        "header2 header2 header2"
+        "main3 . main4"
+        "footer4 footer5 footer6";
+    width: 610px;
+    margin: 20px auto;
+    border: solid black;
+    
+}
+
+
+.human-title {
+    grid-area: header1;
+    align-self: end;
+    background-color: #97BDBF;
+}
+
+.human-avatar {
+    grid-area: main1;
+    align-self: center;
+    justify-self: center;
+      
+}
+
+.human-score {
+    grid-area: main2;
+    align-self: center;
+    justify-self: center;
+      
+}
+
+.computer-title {
+    grid-area: header2;
+    align-self: end;
+    background-color: #97BDBF;
+}
+
+.computer-avatar {
+    grid-area: main3;
+    align-self: center;
+    justify-self: center;
+       
+}
+
+.computer-score {
+    grid-area: main4;
+    align-self: center;
+    justify-self: center;
+}
+
+.human-rock-button {
+    grid-area: footer1;
+}
+
+.human-rock-button:hover, .human-paper-button:hover, .human-scissors-button:hover, .computer-rock-button:hover, .computer-paper-button:hover, .computer-scissors-button:hover {
+    background-color: #799799;
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: #799799;
+}
+
+.human-paper-button {
+    grid-area: footer2;
+    
+}
+
+.human-scissors-button {
+    grid-area: footer3;
+    
+}
+
+.computer-rock-button {
+    grid-area: footer4;
+}
+
+.computer-paper-button {
+    grid-area: footer5;
+}
+
+.computer-scissors-button {
+    grid-area: footer6;
+}
+
+#result {
+    color: red;
+}
+
+button {
+    font-size: 0.8em;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.endgame {
+    background-color: red;
+    
+}
